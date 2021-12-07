@@ -37,7 +37,8 @@ export default function ThirdHeader() {
     return (
         <section className= "thirdHeader" ref={headerRef}>
             <div className="logo">
-                 <Link to="/" className="logoName">sunny<i className="fas fa-leaf"></i></Link>
+                 {/* <Link to="/" className="logoName">sunny<i className="fas fa-leaf"></i></Link> */}
+                 <Link to="/" className="logoName"><img src="images/cartlogo.png" alt="cart logo"/></Link>
             </div>
             <div className="menuIcons">
                 <div id="bar" className="fas fa-bars" onClick={clickMenu}></div>

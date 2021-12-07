@@ -124,7 +124,7 @@ header .second-header .content {
   flex: 1 1 80rem;
 }
 
-header .second-header .logo .logoName,
+/* header .second-header .logo .logoName,
 .fixedHeader .logo .logoName {
   font-size: 3rem;
   font-weight: 600;
@@ -135,6 +135,18 @@ header .second-header .logo .logoName i,
 .fixedHeader .logo .logoName i {
   font-size: 3.7rem;
   color: var(--main);
+} */
+
+header .second-header .logo .logoName img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.fixedHeader .logo .logoName img {
+  width: 7rem;
+  height: 6rem;
+  object-fit: cover;
 }
 
 header .second-header .content .information {
@@ -252,7 +264,7 @@ header .second-header .content .information .cartItems .buttons .btn:hover {
 }
 
 header .second-header .content .information .cartItems .itemContainer {
-  height: 16rem;
+  max-height: 16rem;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -1793,10 +1805,12 @@ section.contact {
   border: 0.1rem solid #dddddd;
   font-size: 1.5rem;
   color: var(--text);
+  text-transform: none;
 }
 
 .contact .contactMe .rightSide .box textarea {
   height: 20rem;
+  text-transform: none;
   resize: none;
 }
 
@@ -1832,6 +1846,8 @@ section.contact {
   align-items: center;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   z-index: 29000;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .menuIcons {

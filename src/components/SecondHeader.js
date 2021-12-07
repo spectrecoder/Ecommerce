@@ -7,7 +7,8 @@ export default function SecondHeader() {
     return (
         <div className="second-header">
             <div className="logo">
-                <Link to="/" className="logoName">sunny<i className="fas fa-leaf"></i></Link>
+                {/* <Link to="/" className="logoName">sunny<i className="fas fa-leaf"></i></Link> */}
+                <Link to="/" className="logoName"><img src="images/cartlogo.png" alt="cart logo"/></Link>
             </div>
 
             <div className="content">
